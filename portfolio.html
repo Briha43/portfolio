@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="portfolio.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header class="header">
+        <a href="#home" class="logo">Briha  <span> Malik</span></a>
+
+        <i class='bx bx-menu' id="menu-icon"></i>
+
+
+        <nav class="navbar"> 
+            <a  href="#home" class="hom active"> Home</a>
+            <a  href="#education" class="educ">Education</a>
+            <a  href="#services" class="serv">Services</a>
+            <a  href="#contact" class="con">Contact</a>
+            <label class="toggle-switch" onclick="toggle()"> 
+                <input type="checkbox" />
+                <span class="slider"></span>
+            </label>
+        </nav>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1>Hi, It's <span>Briha</span></h1>
+            <div class="wrapper">
+                <div class="static-txt">I'm a <span>Web Developer</span>  </div>     
+            </div>
+            <p> I am a Software Engineer passionate about crafting clean, responsive, and user-friendly web applications. Currently, I’m diving deep into Full Stack Development, with a strong focus on front-end technologies like HTML, CSS, JavaScript, and React.</p>
+
+            <div class="social-icons">
+                <a href="#"><i class='bx bxl-linkedin' ></i></a>
+                <a href="#"><i class='bx bxl-github' ></i></a>
+                <a href="#"><i class='bx bxl-instagram-alt' ></i></a>
+                <a href="#"><i class='bx bxl-twitter' ></i></a>
+            </div>
+
+            <div class="btn-group">
+                <a href="#" class="btn">Hire</a>
+                <a href="#" class="btn">Contact</a>
+            </div>
+        </div>
+        <div class="my-img"  data-aos="zoom-in-up" >
+            <img src="my pic 3.jpg" alt="my pic" height="350px" width="350px">
+        </div>
+    </section>
+    <section class="education" id="education">
+        <h2 class="heading">Education</h2>
+        <div class="timeline-items">
+            <div class="timeline-item" >
+                <div class="timeline-dots"></div>
+                    <div class="timeline-date">2024</div>
+                    <div class="timeline-content" data-aos="fade-right">
+                        <h3>Fellowship </h3>
+                        <p>I took part in BYTEWISE fellowship for the <i>"front-end devlopment"</i> program during the summers of 2024 and got certificate from BYTEWISE after project completion. </p>
+                    </div>
+            </div>
+
+
+
+            <div class="timeline-item">
+                <div class="timeline-dots"> </div>
+                    <div class="timeline-date">2022</div>
+                    <div class="timeline-content" data-aos="fade-left">
+                        <h3>Uni </h3>
+                        <p>I started my bachelors in Software Engineering of which i am in 6th semester. I have managed to maintain a cgpa of 3.7 up until now during my degree.</p>
+                    </div>
+               
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dots"> </div>
+                    <div class="timeline-date">2022</div>
+                    <div class="timeline-content" data-aos="fade-right">
+                        <h3>College </h3>
+                        <p>I did my ICS(intermediate in computer science) from PGC Rwp in 2022 with a total percentage of 86. </p>
+                    </div>
+               
+            </div>
+
+
+            <div class="timeline-item">
+                <div class="timeline-dots"> </div>
+                    <div class="timeline-date">2020</div>
+                    <div class="timeline-content" data-aos="fade-left">
+                        <h3>School </h3>
+                        <p>I did my Matric (in computer science) from Hira Pubic School (federal board) Rwp in 2020 with a total percentage of 92.</p>
+                    </div>
+               
+            </div>
+        </div>
+
+    </section>
+    <section class="services" id="services">
+        <h2 class="heading ">Services</h2>
+        <div class="service-container">
+            <div class="service-box"   data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500">
+                <div class="service-info">  
+                    <h2>Frontend Development</h2>
+                    <p>I specialize in creating visually stunning, responsive, and user-friendly web interfaces. With expertise in HTML, CSS, JavaScript and Wordpress I bring designs to life with precision and creativity.</p>
+                </div>
+            </div>
+            <div class="service-box" data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500">
+                <div class="service-info">
+                    <h2>Backend Development</h2>
+                    <p>I am onto my backend development learning with aims to master Full-Stack Web Development.</p>
+                </div>
+            </div>
+            <div class="service-box"  data-aos="fade-up"
+            data-aos-duration="3000">
+                <div class="service-info" >
+                    <h2>UI Design (Figma)</h2>
+                    <p>Designing clean and user-friendly interfaces with Figma to create visually appealing and intuitive user experiences.</p>
+                </div>
+            </div>
+            <div class="service-box"  data-aos="fade-up"
+            data-aos-duration="3000">
+                <div class="service-info">
+                    <h2>Graphic Design </h2>
+                    <p>Creating eye-catching graphics and designs using Adobe Illustrator and Photoshop to bring ideas to life with creativity and precision.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class=" services contact" id="contact">
+        <h2 class="heading ">Contact <span>Me</span></h2>
+
+        <form action="#" method="post" class="contact-form">
+
+            <div class="outer-grid">
+                <div class="input-group-one">
+                    <input type="text" placeholder="Full Name" required>
+                    <input type="email" placeholder="Email" required>
+                    <input type="tel" placeholder="Phone Number" required>
+                    <input type="text" placeholder="Subject" required>
+                    
+                </div>
+                <div class="input-group-two">
+                    <textarea placeholder="Your Message" required cols="40" rows="9"></textarea>
+                    <button type="submit" class="btn" value="Submit">Send Message</button>
+                </div>
+            </div>
+            
+        </form>
+    </section>
+
+    <footer class="footer">
+        <div class="social-icons last">
+            <a href="#"><i class='bx bxl-linkedin' ></i></a>
+            <a href="#"><i class='bx bxl-github' ></i></a>
+            <a href="#"><i class='bx bxl-instagram-alt' ></i></a>
+            <a href="#"><i class='bx bxl-twitter' ></i></a>
+        </div>
+        <ul class="list"> 
+            <li>
+                <a  href="#contact" > Faq</a>
+            </li>
+            <li>
+                 <a  href="#services">services</a>
+            </li>
+            <li>
+                <a  href="#education">Education</a>
+            </li>
+            <li>
+                <a href="home">About me</a>
+            </li>
+            <li>
+                <a  href="#contact">Contact</a>
+            </li>
+            
+        </ul>
+        <p class="copyright">
+            &copy; All rights reserved | Briha Malik
+        </p>
+    </footer>
+
+
+    <script src="portfolio.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // using aoa library of js
+        AOS.init(
+            {
+                offset: 100,
+                delay: 0,
+                duration: 500,
+            }
+        );
+    </script>
+</body>
+</html>
